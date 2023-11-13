@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: linear-gradient (to bottom right, #FFBB00, #D52C27, #00923f);
+  background-image: linear-gradient (to bottom right, #FFBB00, #D52C27, #00923f);
 }
 
 header h1{
