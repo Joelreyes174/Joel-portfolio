@@ -8,72 +8,6 @@ body{
   background-color: #D52C27;
   font-family: 'oxygen', sans-serif;
 }
-
-.container{
-  box-shadow: 0 0 50px #3f0c1f;
-  border: 2px solid #3f0c1f;
-}
-
-#header-nav {
-  background-color: #ffbb00;
-  border-radius: 0;
-  border: 0;
-}
-
-#logo-img {
-  background: url('../images/Asset 1.png') no-repeat;
-  object-fit: inherit;
-  width: 100px;
-  height: 300px;
-  margin: 10px 15px 10px 0;
-}
-
-.navbar-brand {
-  padding-top: 25px;
-}
-
-.navbrand-brand h1 {
-  font-family: 'lora', sans-serif;
-  color: #000000;
-  font-size: 1.5em;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px #222;
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: .75;  
-}
-
-.navbar-brand a:hover, .navbar-brand a:focus {
-  text-decoration: none;
-}
-
-#nav-list {
-  margin-top: 10px;
-}
-
-#nav-list a {
-  color: #00923F;
-  text-align: center;
-}
-
-#nav-list a:hover {
-  background: #E7E7E7;
-}
-
-#nav-list a span {
-  font-size: 1.8em;
-}
-
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #61122f;
-}
-
-.navbar-header button.navbar-toggle {
-  clear: both;
-  margin-top: -30px;
-}
-
 /* name card */
 .name_card {
   background-color: #ffbb00;
@@ -87,32 +21,6 @@ body{
 .name_card h2 {
   text-align: center;
   font-size: 1.5em;
-}
-
-/* navigation bar */
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #333;
-  overflow: hidden;
-  box-shadow: 0px 2px 10px lightslategrey;
-}
-
-li a{
-  display: block;
-  float: left;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #111;
-}
-
-li a.active{
-  background-color: #04aa6d;
 }
 
 /* something i dont remember */
@@ -218,18 +126,6 @@ h3 {
   opacity: 85%;
 }
 
-button {
-  padding: 10px 20px;
-  border: 5px solid black;
-  border-radius: 10px;
-  font-size: 15px;
-}
-
-button:hover{
-  background-image: linear-gradient(darkslategrey, lightslategrey);
-  color: white;
-  box-shadow: 2px 2px 8px lightslategrey;
-}
 /* carausol */
 .carousel-inner img {
   width: 50%;
@@ -237,63 +133,94 @@ button:hover{
 }
 
 /* media queries */
-/
+/* Large */
 @media (min-width: 1200px) {
   .photo {
     width: 300px;
   }
+}
 
+/* Medium */
 @media (min-width: 992px) and (max-width: 1199px) {
   .photo {
     width: 240px;
-    background-color: black;
-  }
-
-  #logo-img {
-    background: url('../images/Asset 1.png');
   }
 }
 
+/* Small */
 @media (min-width:768px) and (max-width:991px) {
   .photo {
     width: 230px;
   }
 }
+
 /* extra small */
 @media (max-width: 767px) {
   .photo{
     width: 230px;
-    background-color: yellow;
-  }
-  .navbar-brand {
-    padding-top: 10px;
-    height: 80px;
-  }
-  .navbar-brand h1 { /* Restaurant name */
-    padding-top: 10px;
-    font-size: 5vw; /* 1vw = 1% of viewport width */
-  }
-
-  #collapsable-nav a { /* Collapsed nav menu text */
-    font-size: 1.2em;
-  }
-  #collapsable-nav a span { /* Collapsed nav menu glyph */
-    font-size: 1em;
-    margin-right: 5px;
-  }
-  .container {
-    margin-top: 30px;
-    padding: 0;
   }
 }
-/* extra small */
+
+/* extra extra small */
 @media (max-width: 479px) {
+  #Coffee_body #hf_card_body #svc_card_body {
+  min-width: 100%;
+  min-height: 150px;
+  border-radius: 10px;
+  flex: 0 0 250px;
+  padding: 10px;
+  margin: 5px;
+  box-shadow: 2px 2px 10px lightslategrey;
+  }
   .photo {
     width: 230px;
-    background-color: blue;
   }
-  .navbar-brand h1 {
-    padding-top: 5px;
-    font-size: 6vw;
+} 
+
+/* nav bar */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+.navbar {
+  height: 90px;
+  background-color: #00923f;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar a{
+  color: white;
+}
+.logo a {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  margin-left: 12px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.menu-links {
+  display: flex;
+  gap: 200px;
+  padding-inline: 24px;
+}
+
+.menu-links a {
+  font-weight: 500;
+  color: white;
+  padding: 8px 16px;
+}
+.menu-links a:hover {
+  color: white;
+}
+
+@media (max-width: 53rem) {
+  .menu {
+    display: none;
   }
 }
