@@ -7,6 +7,7 @@
 		<title>Joel Reyes Portfolio</title>
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/bootstrap.min copy.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
 	</head>
@@ -14,9 +15,8 @@
         <header>
             <nav class="navbar">
               <div class="logo">
-                <a href="#">LOGO</a>
+                <a href="index.html">Home</a>
               </div>
-                  <a href="#">Home</a>
                   <a href="#">About</a>
                   <a href="#">Contact</a>
                 </div>
@@ -25,8 +25,11 @@
         </header>
             <section>
                 <div class="name_card">
-                    <h1>Joel Reyes</h1>
-                    <h2>An Aspiring UX/UI designer seeking opportunities to create intuitive and creative user interfaces</h2>
+                    <img class="photo" src="images/me.jpg" alt="pretty boy">
+                    <div class="card-content">
+                        <h1>Hi! My name is Joel Reyes</h1>
+                        <h2>Im an Aspiring UX/UI designer seeking opportunities to create intuitive and creative user interfaces</h2>
+                    </div>
                 </div>
             </section>
             <section>
@@ -70,31 +73,42 @@
                 <hr style="width: 50%">
                 <h3>Photoshop Art</h3>
                 <hr style="width: 50%">
-                    <div class="dimentions">
-                        <div id="carouselExample" class="carousel slide">
-                          <div class="carousel-inner">
-                            <div class="carousel-item active">
-                              <img src="images/carousel images/movie-poster.jpg" class="d-block w-100" alt="movie poster">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="images/carousel images/movie-poster.jpg" alt="movie poster">
                             </div>
-                            <div class="carousel-item">
-                              <img src="images/carousel images/name-card.jpg" class="d-block w-100" alt="A name card">
+                            <div class="item">
+                                <img src="images/carousel images/name-card.jpg" alt="its a name card">
                             </div>
-                            <div class="carousel-item">
-                              <img src="images/carousel images/Swallow.jpg" class="d-block w-100" alt="paper cutout">
+                            <div class="item">
+                                <img src="images/carousel images/Swallow.jpg" alt="swallow">
                             </div>
-                          </div>
-                          <!---- Controls ----->
-                          <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                              <span class="carousel-control-prev-icon"></span>
-                          </a>
-                          <a class="carousel-control-next" href="#demo" data-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                          </a>
                         </div>
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
             </section>
+            <hr style="width:50%">
+            <div class="footer_text">
+                <p>Want to more <br> Get in touch at:</p>
+                <p class="email">joelreyes174@gmail.com</p>
+            </div>
             <!--- jQuery ----->	
         	<script src="js/jquery-3.6.4.min copy.js"></script>
         	<script src="js/bootstrap.min copy.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         </body>
 </html>

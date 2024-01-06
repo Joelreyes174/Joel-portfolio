@@ -10,6 +10,7 @@ body{
 }
 /* name card */
 .name_card {
+  display: flex;
   background-color: #ffbb00;
   margin: 50px;
   padding: 10px;
@@ -18,11 +19,23 @@ body{
   border-radius: 10px;
   }
 
-.name_card h2 {
+.card-content h2 {
   text-align: center;
   font-size: 1.5em;
 }
-
+.card-content h1 {
+  text-align: center;
+  padding: 10px;
+}
+.name_card img {
+  width: 100%;
+  max-width: 250px;
+  height: 100%;
+}
+.card-content {
+  flex: 1;
+  padding: 20px;
+}
 /* something i dont remember */
 h1 {
   text-align: center;
@@ -125,9 +138,17 @@ h3 {
   padding: 1px;
   opacity: 85%;
 }
-
+.footer_text {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800px;
+}
+.email {
+  font-size: 5rem;
+}
 /* carausol */
 .carousel-inner img {
+  align-items: center;
   width: 50%;
   height: 50%;
 }
@@ -191,6 +212,7 @@ h3 {
 .navbar a{
   color: white;
 }
+
 .logo a {
   font-size: 24px;
   font-weight: 700;
