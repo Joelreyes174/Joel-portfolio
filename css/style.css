@@ -148,6 +148,8 @@ h3 {
 }
 /* carausol */
 .carousel-inner img {
+  display: block;
+  vertical-align: middle;
   align-items: center;
   width: 50%;
   height: 50%;
