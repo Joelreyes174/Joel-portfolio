@@ -1,0 +1,167 @@
+:root {
+  --gold-la: #ffbb00;
+  --green-la: #00923f;
+  --red-la: #d52c27;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+body{
+  font-size: 16px;
+  color: #fff;
+  background-color: #D52C27;
+  font-family: 'oxygen', sans-serif;
+}
+
+/** container **/
+.container{
+  background-color: var(--red-la);
+  height: 30vw;
+  width: 90%;
+  padding: 10px;
+  display: flex;
+  border-radius: 10px;
+  margin: 10px;
+}
+.container .photo {
+  height: 340px;
+  width: 290px;
+  margin-top: 50px;
+  position: absolute;
+  background-color: var(--gold-la);
+  border-radius: 10px;
+}
+.text_field{
+  text-align: justify-all;
+  margin: auto;
+}
+.container .text {
+  position: relative;
+  color: #ffff;
+  margin-left: 300px;
+  margin-top: 60px;
+  font-size: 1.5rem;
+}
+.container .photo2 {
+  height: 340px;
+  width: 350px;
+  margin-top: 65px;
+  margin-left: 770px;
+  position: absolute;
+  background-color: var(--gold-la);
+  border-radius: 10px;
+}
+.container .text2 {
+  position: relative;
+  color: #ffff;
+  margin-right: 400px;
+  margin-top: 30px;
+  font-size: 20px;
+}
+.container h3 {
+  font-size: 30px;
+  color: #ffff;
+}
+
+/* nav bar */
+.navbar {
+  height: 90px;
+  background-color: #00923f;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar a{
+  color: white;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+
+}
+
+/** footer **/
+.footer_text {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800px;
+}
+
+.email {
+  font-size: 5rem;
+}
+
+/* media queries */
+/* Large */
+@media (min-width: 1200px) {
+
+}
+
+/* Medium */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Small */
+@media (min-width:768px) and (max-width:991px) {
+
+}
+
+/* extra small */
+@media (max-width: 767px) {
+
+}
+
+/* extra extra small */
+@media (max-width: 479px) {
+  .email{
+    font-size: 2.5rem;
+  }
+  .container {
+    height: 500px;
+  }
+  .text_field .about {
+    position: absolute;
+    left: 35%;
+    top: 120px;
+  }
+  .container .text {
+    position: absolute;
+    color: black;
+    padding-top: 50px;
+    padding-bottom: 150px;
+  }
+  /**
+  .container .text {
+  position: relative;
+  color: #ffff;
+  margin-left: 300px;
+  margin-top: 60px;
+  font-size: px; **/
+  .container .photo {
+    height: 200px;
+    width: 200px;
+    top: 150px;
+    left: 110px;
+    position: absolute;
+  }
+  .container .photo2 {
+    height: 30px;
+    width: 20px;
+    top: 0px;
+    position: absolute;
+  }
+  .container .text_field {
+
+  }
+} 
+@media (max-width: 53rem) {
+
+}

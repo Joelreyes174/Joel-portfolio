@@ -1,0 +1,85 @@
+:root {
+  --gold-la: #ffbb00;
+  --green-la: #00923f;
+  --red-la: #d52c27;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+body{
+  font-size: 16px;
+  color: #fff;
+  background-color: #D52C27;
+  font-family: 'oxygen', sans-serif;
+}
+
+/** container **/
+iframe {
+  width: 75%;
+  height: 500px;
+  margin-left: 12%;
+}
+
+/* nav bar */
+.navbar {
+  height: 90px;
+  background-color: #00923f;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar a{
+  color: white;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+
+}
+
+/** footer **/
+.footer_text {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800px;
+}
+
+.email {
+  font-size: 5rem;
+}
+
+/* media queries */
+/* Large */
+@media (min-width: 1200px) {
+
+}
+
+/* Medium */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Small */
+@media (min-width:768px) and (max-width:991px) {
+
+}
+
+/* extra small */
+@media (max-width: 767px) {
+
+}
+
+/* extra extra small */
+@media (max-width: 479px) {
+
+} 
+@media (max-width: 53rem) {
+
+}
