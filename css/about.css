@@ -16,57 +16,41 @@ body{
   background-color: #D52C27;
   font-family: 'oxygen', sans-serif;
 }
-
 /** container **/
-.container{
-  background-color: var(--red-la);
-  height: 30vw;
-  width: 90%;
-  padding: 10px;
+.container {
   display: flex;
+  flex-direction: column;
+  background-color: var(--red-la);
+  margin-left: 20vw;
+  margin-right: 20vw;
+  padding: 10px;
+  border: 10px #2c3639;
   border-radius: 10px;
-  margin: 10px;
+  box-shadow: 5px 5px 10px lightslategrey;
+  }
+
+.container .text {
+  text-align: center;
+  color: #ffff;
+  font-size: 1em;
+}
+.container .about {
+  color: #ffff;
+  text-align: center;
+  padding: 5px;
 }
 .container .photo {
-  height: 340px;
-  width: 290px;
-  margin-top: 50px;
-  position: absolute;
-  background-color: var(--gold-la);
-  border-radius: 10px;
-}
-.text_field{
-  text-align: justify-all;
   margin: auto;
-}
-.container .text {
-  position: relative;
-  color: #ffff;
-  margin-left: 300px;
-  margin-top: 60px;
-  font-size: 1.5rem;
-}
-.container .photo2 {
-  height: 340px;
   width: 350px;
-  margin-top: 65px;
-  margin-left: 770px;
-  position: absolute;
-  background-color: var(--gold-la);
+  height: 200px;
+  background-size: inherit;
+  border: 10px solid;
   border-radius: 10px;
+  border-color: var(--gold-la);
 }
-.container .text2 {
-  position: relative;
-  color: #ffff;
-  margin-right: 400px;
-  margin-top: 30px;
-  font-size: 20px;
+.text_field {
+  padding: 25px;
 }
-.container h3 {
-  font-size: 30px;
-  color: #ffff;
-}
-
 /* nav bar */
 .navbar {
   height: 90px;
@@ -79,25 +63,43 @@ body{
 .navbar a{
   color: white;
 }
-
 .logo a {
   font-size: 24px;
   font-weight: 700;
   color: white;
 
 }
-
 /** footer **/
 .footer_text {
   text-align: center;
   font-size: 30px;
   font-weight: 800px;
 }
-
 .email {
   font-size: 5rem;
 }
-
+/** socails **/
+.socials {
+  display: inline-flex;
+}
+.socials .soc {
+  height: 100px;
+  width: 100px;
+  margin: 50px;
+  background-size: cover;
+}
+.socials .insta{
+  height: 100px;
+  width: 100px;
+  margin: 50px;
+  background-size: cover;
+}
+.socials .twitter{
+  height: 100px;
+  width: 100px;
+  margin: 50px;
+  background-size: cover;
+}
 /* media queries */
 /* Large */
 @media (min-width: 1200px) {
@@ -125,43 +127,24 @@ body{
     font-size: 2.5rem;
   }
   .container {
-    height: 500px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
   }
-  .text_field .about {
-    position: absolute;
-    left: 35%;
-    top: 120px;
-  }
-  .container .text {
-    position: absolute;
-    color: black;
-    padding-top: 50px;
-    padding-bottom: 150px;
-  }
-  /**
-  .container .text {
-  position: relative;
-  color: #ffff;
-  margin-left: 300px;
-  margin-top: 60px;
-  font-size: px; **/
-  .container .photo {
-    height: 200px;
-    width: 200px;
-    top: 150px;
-    left: 110px;
-    position: absolute;
-  }
-  .container .photo2 {
-    height: 30px;
-    width: 20px;
-    top: 0px;
-    position: absolute;
-  }
-  .container .text_field {
 
+  .container .about {
+    order: 1; 
+    margin-top: 10px; 
+  }
+
+  .container .photo {
+    order: 2; 
+    margin-top: 10px; 
+  }
+
+  .text_field {
+    order: 3; 
+    padding-top: 10px; 
   }
 } 
-@media (max-width: 53rem) {
-
-}
+/**

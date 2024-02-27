@@ -54,7 +54,28 @@ iframe {
 .email {
   font-size: 5rem;
 }
-
+/** socails **/
+.socials {
+  display: inline-flex;
+}
+.socials .soc {
+  height: 100px;
+  width: 100px;
+  margin: 50px;
+  background-size: cover;
+}
+.socials .insta{
+  height: 100px;
+  width: 100px;
+  margin: 50px;
+  background-size: cover;
+}
+.socials .twitter{
+  height: 100px;
+  width: 100px;
+  margin: 50px;
+  background-size: cover;
+}
 /* media queries */
 /* Large */
 @media (min-width: 1200px) {
@@ -78,7 +99,9 @@ iframe {
 
 /* extra extra small */
 @media (max-width: 479px) {
-
+  .email{
+    font-size: 2.5rem;
+  }
 } 
 @media (max-width: 53rem) {
 

@@ -39,6 +39,9 @@ body{
   width: 100%;
   max-width: 250px;
   height: 100%;
+  border: 10px solid;
+  border-color: var(--red-la);
+  border-radius: 10px;
 }
 .card-content {
   flex: 1;
@@ -48,12 +51,9 @@ body{
 h1 {
   text-align: center;
   font-size: 100px;
-  color: red;
 }
 h3 {
   text-align: center;
-  font-size: 100px;
-  color: red;
 }
 
 /* case study card */
@@ -62,16 +62,7 @@ h3 {
   position: relative;
   justify-content: center;
   flex-wrap: wrap;
-  margin-left: 3vw;
-  margin-right: 3vw;
-  margin: 5px;
-}
-
-.box {
-  width: 350px;
-  height: 300px;
-  border-radius: 10px;
-  background-color: red;
+  margin: 1px;
 }
 
 .card .photo {
@@ -85,24 +76,24 @@ h3 {
   background-image: linear-gradient(to bottom right, #b3daba, #3673bd);
   display: inline-block;
   text-align: center;
-  min-width: 25%;
+  min-width: 30%;
   min-height: 200px;
   border-radius: 10px;
   flex: 0 0 250px;
   padding: 10px;
-  margin: auto;
+  margin: 5px;
   box-shadow: 2px 2px 10px lightslategrey;
 }
 #svc_card_body{
   background-image: linear-gradient(to bottom right, #DF8044, #EBC55B);
   display: inline-block;
   text-align: center;
-  min-width: 25%;
+  min-width: 30%;
   min-height: 200px;
   border-radius: 10px;
   flex: 0 0 250px;
   padding: 10px;
-  margin: auto;
+  margin: 5px;
   box-shadow: 2px 2px 10px lightslategrey;
 }
 
@@ -110,12 +101,12 @@ h3 {
   background-image: linear-gradient(to bottom right, #abc4aa, #dcd7c9);
   display: inline-block;
   text-align: center;
-  min-width: 25%;
+  min-width: 30%;
   min-height: 200px;
   border-radius: 10px;
   flex: 0 0 250px;
   padding: 10px;
-  margin: auto;
+  margin: 5px;
   box-shadow: 2px 2px 10px lightslategrey;
 }
 
@@ -215,6 +206,28 @@ h3 {
 .menu-links a:hover {
   color: white;
 }
+/** socails **/
+.socials {
+  display: inline-flex;
+}
+.socials .soc {
+  height: 100px;
+  width: 100px;
+  margin: 50px;
+  background-size: cover;
+}
+.socials .insta{
+  height: 100px;
+  width: 100px;
+  margin: 50px;
+  background-size: cover;
+}
+.socials .twitter{
+  height: 100px;
+  width: 100px;
+  margin: 50px;
+  background-size: cover;
+}
 /* media queries */
 /* Large */
 @media (min-width: 1200px) {
@@ -246,22 +259,19 @@ h3 {
 
 /* extra extra small */
 @media (max-width: 479px) {
-  #Coffee_body #hf_card_body #svc_card_body {
-  min-width: 100%;
-  min-height: 150px;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 15px;
-  margin-bottom: 10px;
-  box-shadow: 2px 2px 10px lightslategrey;
+  p {
+    font-size: 14px;
   }
-
-  .email{
+  .email {
     font-size: 2.5rem;
   }
   .photo {
     width: 230px;
   }
+  #Coffee_body, #svc_card_body, #hf_card_body {
+    min-width: 90%;
+  }
+
   .name_card {
     width: fit-content;
     margin-left: 20px;
@@ -274,16 +284,16 @@ h3 {
   }
   .card-content h2 {
   text-align: center;
-  font-size: .7em;
+  font-size: 1em;
   }
   .card-content h1 {
   text-align: center;
   font-size: 1.3em;
   padding: 1px;
   }
-} 
-@media (max-width: 53rem) {
-  .menu {
-    display: none;
+  .box {
+  height: 70px;
+  width: 70px;
+  margin: 10px;
   }
-}
+} 
