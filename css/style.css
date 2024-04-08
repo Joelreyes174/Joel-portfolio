@@ -2,15 +2,15 @@
   --gold-la: #ffbb00;
   --green-la: #00923f;
   --red-la: #d52c27;
+  --black: #2C3639;
 }
 * {
   box-sizing: border-box;
 }
 
-body{
+.body {
   font-size: 16px;
   color: #fff;
-  background-color: #D52C27;
   font-family: 'oxygen', sans-serif;
 }
 
@@ -24,7 +24,7 @@ body{
   float: center;
   border: 10px #2c3639;
   border-radius: 10px;
-  box-shadow: 5px 5px 10px lightslategrey;
+  box-shadow: 10px 10px 50px lightslategrey;
   }
 
 .card-content h2 {
