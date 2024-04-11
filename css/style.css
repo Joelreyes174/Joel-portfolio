@@ -152,6 +152,10 @@ h3 {
 .email {
   font-size: 5rem;
 }
+/** GD Images **/
+.GD_images {
+  background-size: cover;
+}
 /* carausol */
 .carousel-inner img {
   display: block;
