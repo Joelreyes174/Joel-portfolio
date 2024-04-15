@@ -1,0 +1,197 @@
+:root {
+  --gold-la: #ffbb00;
+  --green-la: #00923f;
+  --red-la: #d52c27;
+  --black: #2C3639;
+}
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  font-size: 16px;
+  font-family: 'oxygen', sans-serif;
+}
+h1 {
+  text-align: center;
+  font-size: 100px;
+}
+h3 {
+  text-align: center;
+}
+.footer_text {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800px;
+}
+.email {
+  font-size: 5rem;
+}
+/* carausol */
+.carousel-inner img {
+  display: block;
+  vertical-align: middle;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.modal {
+  text-align: center;
+  padding: 0;
+}
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+.custom-img {
+  max-width: 100%;
+  background-size: cover;
+  display: block;
+  margin: 0 auto;
+}
+.modal-body p {
+  font-size: 16px;
+}
+/* nav bar */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+.navbar {
+  height: 90px;
+  background-color: #00923f;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 5px 2px 10px lightslategrey;
+}
+
+.navbar a{
+  color: white;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  margin-left: 12px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.menu-links {
+  display: flex;
+  gap: 200px;
+  padding-inline: 24px;
+}
+
+.menu-links a {
+  font-weight: 500;
+  color: white;
+  padding: 8px 16px;
+}
+.menu-links a:hover {
+  color: white;
+}
+/** socails **/
+.socials {
+  display: inline-flex;
+}
+.socials .soc {
+  height: 100px;
+  width: 100px;
+  margin: 50px;
+  background-size: cover;
+}
+.socials .insta{
+  height: 100px;
+  width: 100px;
+  margin: 50px;
+  background-size: cover;
+}
+.socials .twitter{
+  height: 100px;
+  width: 100px;
+  margin: 50px;
+  background-size: cover;
+}
+/* media queries */
+/* Large */
+@media (min-width: 1200px) {
+  .photo {
+    width: 300px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .photo {
+    width: 240px;
+  }
+}
+
+/* Small */
+@media (min-width:768px) and (max-width:991px) {
+  .photo {
+    width: 230px;
+  }
+}
+
+/* extra small */
+@media (max-width: 767px) {
+  .photo{
+    width: 230px;
+  }
+}
+
+/* extra extra small */
+@media (max-width: 479px) {
+  p {
+    font-size: 14px;
+  }
+  .email {
+    font-size: 2.5rem;
+  }
+  .photo {
+    width: 230px;
+  }
+  #Coffee_body, #svc_card_body, #hf_card_body {
+    min-width: 90%;
+  }
+
+  .name_card {
+    width: fit-content;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .name_card img {
+  margin: auto;
+  width: 50%;
+  height: 50%;
+  }
+  .card-content h2 {
+  text-align: center;
+  font-size: 1em;
+  }
+  .card-content h1 {
+  text-align: center;
+  font-size: 1.3em;
+  padding: 1px;
+  }
+  .box {
+  height: 70px;
+  width: 70px;
+  margin: 10px;
+  }
+} 
