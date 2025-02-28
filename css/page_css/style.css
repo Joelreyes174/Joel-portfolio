@@ -1,52 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --gold-la: #ffbb00;
   --green-la: #00923f;
   --red-la: #d52c27;
   --black: #2C3639;
 }
-* {
-  box-sizing: border-box;
+
+@font-face {
+  font-family:'typewriter'; 
+  src: url('../fonts/typewriter.ttf') format('truetype');
 }
 
-.body {
+body {
   font-size: 16px;
-  font-family: 'oxygen', sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--black);
+  margin: 0;
 }
 
 /* name card */
 .name_card {
   display: flex;
-  background-color: #ffbb00;
-  margin-left: 20vw;
-  margin-right: 20vw;
+  flex: 0 0 auto;
+  margin: 2 rem;
   padding: 10px;
-  float: center;
-  border: 10px #2c3639;
+  height: 30vw;
+  width: 60%;
+  background-color: var(--black);
+  position: relative;
+  left: 20%;
   border-radius: 10px;
-  box-shadow: 10px 10px 50px lightslategrey;
+
+  &::after {
+    content: '';
+    border-radius: 4px;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #00DBDE;
+    background-image: linear-gradient(45deg, #00923F 0%, #FFBB00 50%, #D52C27 100%);
+    filter: blur(20px);
   }
-
-.card-content p {
-  text-align: justify;
-  font-size: 1em;
-
 }
-.card-content h1 {
-  text-align: center;
-  padding: 10px;
-}
-.name_card img {
-  width: 100%;
-  max-width: 250px;
+
+.photo {
+  width: 150px;
   height: 100%;
-  border: 10px solid;
-  border-color: var(--red-la);
-  border-radius: 10px;
+  border-radius: 20px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
+
 .card-content {
-  flex: 1;
+  color: floralwhite;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+h1 {
+  font-family: typewriter;
+  font-size: 35px;
+}
+
+.text {
+  justify-content: center;
+  font-size: 16px;
+  margin: 1px;
+  text-justify: inter-word;
+}
+
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: blur(20px);
+}
+
 /* something i dont remember */
 h1 {
   text-align: center;
@@ -125,7 +168,7 @@ h3 {
 
 .text-field a {
   font-weight: 700;
-  font-size: 15px;
+  font-size: 20px;
   color: white;
 }
 
@@ -136,7 +179,6 @@ h3 {
   color: white;
   margin: 10px;
   padding: 5px;
-
 }
 .text-field h3 {
   font-size: 20px;
@@ -193,21 +235,35 @@ h3 {
 .modal-body p {
   font-size: 16px;
 }
+
 /* nav bar */
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 
 .navbar {
   height: 90px;
-  background-color: #00923f;
+  background-color: var(--black);
   padding: 20px 40px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  box-shadow: 5px 2px 10px lightslategrey;
+  position: relative;
+
+  &::after {
+    content: '';
+    border-radius: 4px;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #00DBDE;
+    background-image: linear-gradient(45deg, #00923F 0%, #FFBB00 50%, #D52C27 100%);
+    filter: blur(20px);
+  }
 }
 
 .navbar a{
   color: white;
+  padding: 80px;
 }
 
 .logo a {
@@ -259,6 +315,13 @@ h3 {
   margin: 50px;
   background-size: cover;
 }
+
+.skyline {
+    width: 100%;
+    height: 100%;
+    background-image: url('flag_colors.png');
+  }
+
 /* media queries */
 /* Large */
 @media (min-width: 1200px) {
@@ -304,27 +367,29 @@ h3 {
   }
 
   .name_card {
-    width: fit-content;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 350px;
+    height: fit-content;
+    left: 10%;
   }
   .name_card img {
-  margin: auto;
-  width: 50%;
-  height: 50%;
+    position: relative;
+    margin: auto;
+    width: 50%;
+    height: 50%;
   }
   .card-content h2 {
-  text-align: center;
-  font-size: 1em;
+    position: absolute;
+    text-align: center;
+    font-size: 1em;
   }
   .card-content h1 {
-  text-align: center;
-  font-size: 1.3em;
-  padding: 1px;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 1px;
   }
   .box {
-  height: 70px;
-  width: 70px;
-  margin: 10px;
+    height: 70px;
+    width: 70px;
+    margin: 10px;
   }
 } 
