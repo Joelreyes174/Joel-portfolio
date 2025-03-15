@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-  var nameCard = document.getElementById('name_card');
+  var nameCard = document.querySelector('.name_card');
+  if (!nameCard) return;
   
   var shadow = document.createElement('div');
   shadow.className = 'shadow';
@@ -11,7 +12,12 @@ document.addEventListener("DOMContentLoaded", function() {
   gradient.style.left = '0';
   gradient.style.width = '100%';
   gradient.style.height = '100%';
-  gradient.style.background = 'linear-gradient(to bottom right, rgba(0, 146, 63, 0.5), rgba(255, 187, 0, 0.5), rgba(213, 44, 39, 0.5))';
+  gradient.style.borderRadius = '10px';
+  gradient.style.zIndex = "-1";
+  gradient.style.background = 'linear-gradient(45deg, rgba(0, 146, 63, 0.5), rgba(255, 187, 0, 0.5), rgba(213, 44, 39, 0.5))';
+  gradient.style.filter = 'blur(20px)';
+  gradient.style.opacity = '0.8';
+  
   shadow.appendChild(gradient);
 });
 

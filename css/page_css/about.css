@@ -1,20 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --gold-la: #ffbb00;
   --green-la: #00923f;
   --red-la: #d52c27;
+  --black: #2C3639;
 }
 
-* {
-  box-sizing: border-box;
+@font-face {
+  font-family:'typewriter'; 
+  src: url('../fonts/typewriter.ttf') format('truetype');
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 
-body{
+body {
   font-size: 16px;
-  color: #fff;
-  background-color: #D52C27;
-  font-family: 'oxygen', sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--black);
+  margin: 0;
 }
 
 .baseball-card {
@@ -37,7 +46,7 @@ article.flipped {
   transform: rotateY(180deg);
 }
 .card_front {
-  rotate: 180deg;
+  rotate: 360deg;
 
 }
 .front, 
@@ -77,22 +86,61 @@ article.flipped {
 }
 
 /* nav bar */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
 .navbar {
   height: 90px;
-  background-color: #00923f;
+  background-color: var(--black);
   padding: 20px 40px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  position: relative;
+
+  &::after {
+    content: '';
+    border-radius: 4px;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #00DBDE;
+    background-image: linear-gradient(45deg, #00923F 0%, #FFBB00 50%, #D52C27 100%);
+    filter: blur(20px);
+  }
 }
+
 .navbar a{
   color: white;
+  padding: 80px;
 }
+
 .logo a {
   font-size: 24px;
   font-weight: 700;
   color: white;
+  margin-left: 12px;
+}
 
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.menu-links {
+  display: flex;
+  gap: 200px;
+  padding-inline: 24px;
+}
+
+.menu-links a {
+  font-weight: 500;
+  color: white;
+  padding: 8px 16px;
+}
+.menu-links a:hover {
+  color: white;
 }
 /** footer **/
 .footer_text {
@@ -146,11 +194,18 @@ article.flipped {
   article {
     rotate: 90deg;
   }
+  .baseball-card {
+  justify-content: center;
+  margin: 1em 35em;
+  }
 }
 
 /* extra small */
 @media (max-width: 767px) {
-
+  .baseball-card {
+  justify-content: center;
+  margin: 1em 10em;
+  }
 }
 
 /* extra extra small */
@@ -179,6 +234,10 @@ article.flipped {
   .text_field {
     order: 3; 
     padding-top: 10px; 
+  }
+  .baseball-card {
+  justify-content: center;
+  margin: 1em 1em;
   }
 } 
 /**
