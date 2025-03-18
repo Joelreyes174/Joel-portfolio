@@ -33,3 +33,7 @@ function flip(el) {
 bbCard.addEventListener("click", function() {
   flip(flipper);
 }, false);
+
+function toggleMenu() {
+  document.querySelector(".nav-links").classList.toggle("active");
+}

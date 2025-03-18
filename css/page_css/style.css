@@ -21,18 +21,28 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: var(--black);
+  background-color: var(--black) !important;
+  color: whitesmoke;
   margin: 0;
+  padding: 10px;
+}
+
+hr {
+  width: 50%;
+  margin: 20px auto;
+  border: none;
+  height: 4px;
+  border-radius: 20px;
 }
 
 /* name card */
 .name_card {
   display: flex;
   align-item: center;
-  gap: 50px;
+  gap: 20px;
   max-width: 900px;
   background-color: var(--black);
-  margin:auto;
+  margin: auto;
   border-radius: 10px;
   padding: 20px;
   position: relative;
@@ -64,11 +74,6 @@ body {
   color: white;
 }
 
-h1 {
-  font-family: 'typewriter';
-  font-size: 35px;
-}
-
 .text {
   justify-content: center;
   font-size: 16px;
@@ -90,6 +95,7 @@ h1 {
 h1 {
   text-align: center;
   font-size: 100px;
+  color: white;
 }
 h3 {
   text-align: center;
@@ -178,15 +184,17 @@ h3 {
 }
 .text-field h3 {
   font-size: 20px;
-  color: #2c3639;
+  color: white;
   margin: 5px;
   padding: 1px;
   opacity: 85%;
 }
+
 .footer_text {
   text-align: center;
   font-size: 30px;
   font-weight: 800px;
+  color: whitesmoke;
 }
 .email {
   font-size: 5rem;
@@ -240,7 +248,7 @@ h3 {
   background-color: var(--black);
   padding: 20px 40px;
   display: flex;
-  justify-content: center;
+  justify-content: space-betweens;
   align-items: center;
   position: relative;
 
@@ -257,6 +265,14 @@ h3 {
   }
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+}
+
 .navbar a{
   color: white;
   padding: 80px;
@@ -269,6 +285,7 @@ h3 {
   margin-left: 12px;
 }
 
+
 .menu {
   display: flex;
   align-items: center;
@@ -277,7 +294,7 @@ h3 {
 
 .menu-links {
   display: flex;
-  gap: 200px;
+  gap: 15px;
   padding-inline: 24px;
 }
 
@@ -291,7 +308,8 @@ h3 {
 }
 /** socails **/
 .socials {
-  display: inline-flex;
+  position: relative;
+  z-index: 1;
 }
 .socials .soc {
   height: 100px;
@@ -313,10 +331,12 @@ h3 {
 }
 
 .skyline {
-    width: 100%;
-    height: 100%;
-    background-image: url('flag_colors.png');
-  }
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  bottom: -330%;
+}
 
 /* media queries */
 /* Large */
@@ -374,7 +394,6 @@ h3 {
   .name_card {
     width: 350px;
     height: fit-content;
-    left: 10%;
   }
   .name_card img {
     position: relative;
@@ -397,6 +416,18 @@ h3 {
     width: 70px;
     margin: 10px;
   }
+  .skyline {
+    bottom: -245%;
+  }
+  .socials .soc {
+    height: 50px;
+    width: 50px;
+  }
+  .socials .insta {
+    height: 50px;
+    width:50px;
+  }
 }
+
 
 

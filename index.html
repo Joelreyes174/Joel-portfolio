@@ -14,19 +14,28 @@
 	</head>
     <body class="body">
         <header>
-            <nav class="navbar">
-              <div class="logo">
-                <a href="index.html">Home</a>
-              </div>
-              <div>
-                  <a href="about.html">About</a>
-              </div>
-              <div>
-                  <a href="gallery.html">Gallery</a>
-              </div>
-              <div>
-                <a href="resume.html">Resume</a>
-              </div>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon">-</span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Resume</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
         <!-- Name Card -->
@@ -42,7 +51,7 @@
         <!-- Case studies -->
         <section>
             <hr>
-            <h1>Freelance Case Studies</h1>
+            <h1 style="color:white;">Freelance Case Studies</h1>
             <div class="card">
                 <div id="Coffee_body">
                     <img class="photo" src="images/cs photo/coffee.jpg" alt="photo">
@@ -52,14 +61,14 @@
                         <p>This is a freelance job where I was tasked with creating a Brand Guide, Logo, and Website</p>
                         <div>
                             <a href="https://www.figma.com/proto/jUKpXj0aG32MiXfEWQSaAs/Untitled?type=design&node-id=1-2&t=a8X03bS8PYBf8sxE-1&scaling=contain&page-id=0%3A1&mode=design" target="_blank">Show Me</a>
-                            <hr width=15%>
+                            <hr>
                             <a href="https://www.figma.com/proto/jUKpXj0aG32MiXfEWQSaAs/Coffee-Buisness-Case-Study?type=design&node-id=147-125&t=9iyyA1XAyEgQoSP8-1&scaling=contain&page-id=0%3A1&starting-point-node-id=147%3A125&show-proto-sidebar=1&mode=design" target="_blank">See Brand Guide</a>
                         </div>
                     </div>
                 </div>
             </div>
             <hr>
-            <h1>Project Case Studies</h1>
+            <h1 style="color:white;">Project Case Studies</h1>
             <div class="card">
                 <div id="hf_card_body">
                     <img class="photo" src="images/cs photo/HF.png" alt="photo">
@@ -68,7 +77,7 @@
                         <h3>Case Study</h3>
                         <p>This was done in a college bootcamp offered by Cal State Long Beach, and done over the course of a few months.</p>
                         <a href="https://www.figma.com/proto/YnMQVLydTXnlMdVAE2W9bf/Untitled?type=design&node-id=1-2&t=fbP3Jc4Uy5ju2RwQ-1&scaling=contain&page-id=0%3A1&mode=design" target="_blank">Show me</a>
-                        <hr width=15%>
+                        <hr>
                         <a href="https://www.figma.com/proto/YnMQVLydTXnlMdVAE2W9bf/Healthy-family-Case-study?type=design&node-id=44-509&t=fZCA0Y0lxBIurdWq-1&scaling=contain&page-id=0%3A1&starting-point-node-id=44%3A509&show-proto-sidebar=1&mode=design" target="_blank">See Brand Guide</a>
                     </div>
                 </div>
@@ -79,7 +88,7 @@
                         <h3>Case Study</h3>
                         <p>This was done in a college bootcamp offered by Cal state Long Beach, and done over the course of a few months. </p>
                         <a href="https://www.figma.com/proto/Mu2PmBqwAwGyyOHNklqFxq/Untitled?type=design&node-id=1-2&t=QbUhVoj5ulYvmN9j-1&scaling=contain&page-id=0%3A1&mode=design" target="_blank">Show me</a>
-                        <hr width=15%>
+                        <hr>
                         <a href="https://www.figma.com/proto/Mu2PmBqwAwGyyOHNklqFxq/Scum-and-Villany?type=design&node-id=50-53&t=uSWhm7uCsz1C6O7g-1&scaling=contain&page-id=0%3A1&mode=design" target="_blank">See Brand Guide</a>
                     </div>
                 </div>
@@ -88,7 +97,7 @@
         <!-- Gallery -->
         <section>
             <hr>
-            <h1>Graphic Design</h1>
+            <h1 style="color:white;">Graphic Design</h1>
             <div class="GD_images"> 
                 <div data-toggle="modal" data-target="#myModal1">
                     <img src="images/Untitled 16~2.png" alt="UCLA Banner">
@@ -111,6 +120,9 @@
             <p>Get in touch at:</p>
             <p class="email">joelreyes174@gmail.com</p>
             <p>or</p>
+            <div class="skyline">
+                <img src="flag_colors.svg" alt="Los Angeles skyline">
+            </div>
             <div class="socials">
                 <a href="https://www.linkedin.com/in/joel-reyes-ca1776/" target="_blank">
                     <img class="soc" src="socials/linkin.png" alt="linkin">
@@ -123,9 +135,6 @@
                     <img class="twitter" src="socials/twitter.png" alt="twitter">
                 </a>
                 --->
-            </div>
-            <div>
-                <img class="skyline" src="flag_colors.svg" alt="Los Angeles skyline">
             </div>
         </div>
         <!--- jQuery ----->	
