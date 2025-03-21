@@ -1,24 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --gold-la: #ffbb00;
   --green-la: #00923f;
   --red-la: #d52c27;
   --black: #2C3639;
 }
-* {
-  box-sizing: border-box;
+
+@font-face {
+  font-family:'typewriter'; 
+  src: url('/fonts/typewriter.ttf') format('truetype');
 }
 
-.body {
+body {
   font-size: 16px;
-  font-family: 'oxygen', sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--black) !important;
+  margin: 0;
+  padding: 10px;
+  color: whitesmoke;
 }
-h1 {
+
+section h1 {
   text-align: center;
-  font-size: 100px;
+  font-size: 3em;
+  color: whitesmoke;
 }
-h3 {
+
+section h3 {
+  font-size: 2em;
+  color: whitesmoke;
   text-align: center;
 }
+
+hr {
+  width: 50%;
+  margin: 20px auto;
+  border: none;
+  height: 4px;
+  border-radius: 20px;
+}
+
 .footer_text {
   text-align: center;
   font-size: 30px;
@@ -63,50 +91,91 @@ h3 {
 /* nav bar */
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 
-.navbar {
-  height: 90px;
-  background-color: #00923f;
-  padding: 20px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 5px 2px 10px lightslategrey;
-}
-
-.navbar a{
-  color: white;
-}
-
 .logo a {
   font-size: 24px;
   font-weight: 700;
   color: white;
   margin-left: 12px;
+  text-transform: uppercase;
 }
 
-.menu {
-  display: flex;
-  align-items: center;
-  gap: 32px;
+/** Header collapsable button attempt **/
+#header-nav {
+  background-color: var(--black) !important;
+  border-radius: 10px;
+  margin-bottom: auto;
+  
+  &::after {
+    content: '';
+    border-radius: 4px;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 10%;
+    background-color: #00DBDE;
+    background-image: linear-gradient(45deg, #00923F 0%, #FFBB00 50%, #D52C27 100%);
+    filter: blur(20px);
+  }
 }
 
-.menu-links {
-  display: flex;
-  gap: 200px;
-  padding-inline: 24px;
+.navbar-brand {
+  padding-top: 25px;
 }
 
-.menu-links a {
-  font-weight: 500;
-  color: white;
-  padding: 8px 16px;
+.navbar-brand h1 { /* name */
+  font-family: 'typewriter', sans-serif;
+  color: whitesmoke;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-shadow: 5px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
 }
-.menu-links a:hover {
-  color: white;
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+
+#nav-list a {
+  color: whitesmoke;
+  text-align: center;
+}
+
+#nav-list a:hover {
+  background-color: var(--green-la);
+}
+
+#nav-list a span {
+  font-size: 1.8em;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid whitesmoke;
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/** footer **/
+.footer_text {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800px;
+  color: whitesmoke;
+}
+.email {
+  font-size: 5rem;
 }
 /** socails **/
+/** socails **/
 .socials {
-  display: inline-flex;
+  position: relative;
+  z-index: 1;
 }
 .socials .soc {
   height: 100px;
@@ -125,6 +194,15 @@ h3 {
   width: 100px;
   margin: 50px;
   background-size: cover;
+}
+
+.skyline {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
 }
 /* media queries */
 /* Large */
@@ -153,6 +231,30 @@ h3 {
   .photo{
     width: 230px;
   }
+/* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 20px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
 }
 
 /* extra extra small */
@@ -160,38 +262,22 @@ h3 {
   p {
     font-size: 14px;
   }
-  .email {
-    font-size: 2.5rem;
-  }
   .photo {
     width: 230px;
   }
-  #Coffee_body, #svc_card_body, #hf_card_body {
-    min-width: 90%;
+  .email {
+    font-size: 2.5rem;
   }
-
-  .name_card {
-    width: fit-content;
-    margin-left: 20px;
-    margin-right: 20px;
+  .socials .soc {
+    height: 50px;
+    width: 50px;
   }
-  .name_card img {
-  margin: auto;
-  width: 50%;
-  height: 50%;
+  .socials .insta {
+    height: 50px;
+    width:50px;
   }
-  .card-content h2 {
-  text-align: center;
-  font-size: 1em;
-  }
-  .card-content h1 {
-  text-align: center;
-  font-size: 1.3em;
-  padding: 1px;
-  }
-  .box {
-  height: 70px;
-  width: 70px;
-  margin: 10px;
+  .navbar-brand h1 {
+    padding-top: 5px;
+    font-size: 6vw;
   }
 } 
