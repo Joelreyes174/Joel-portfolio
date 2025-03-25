@@ -63,7 +63,7 @@ hr {
   align-items: center;
   flex-wrap: wrap;
   max-width: 1000px;
-
+  rotate: -90deg;
 }
 .card {
   color: inherit;
