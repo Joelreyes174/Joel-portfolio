@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
   shadow.appendChild(gradient);
 });
 
+/*
 'strict mode';
 let bbCard = document.getElementById('baseballCard');
 let flipper = document.getElementById('flipper');
@@ -33,7 +34,7 @@ function flip(el) {
 bbCard.addEventListener("click", function() {
   flip(flipper);
 }, false);
-
+*/
 function toggleMenu() {
   document.querySelector(".nav-links").classList.toggle("active");
 }
