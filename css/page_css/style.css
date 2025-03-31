@@ -271,6 +271,11 @@ h3 {
   display: block;
   margin: 0 auto;
 }
+.modal-body img {
+    max-width: 100%; /* Ensures it fits within the modal */
+    border-radius: 10px; /* Optional rounded corners */
+    filter: brightness(0.9); /* Example: Adjust brightness */
+}
 .modal-body p {
   font-size: 16px;
 }
@@ -454,7 +459,7 @@ h3 {
   .photo {
     width: 230px;
   }
-  #Coffee_body, #svc_card_body, #hf_card_body {
+  #Coffee_body, #svc_card_body, #hf_card_body, #clp_body, #dtla_body {
     min-width: 90%;
   }
 
