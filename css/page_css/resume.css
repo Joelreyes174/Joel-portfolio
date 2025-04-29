@@ -125,6 +125,11 @@ iframe {
 }
 .email {
   font-size: 5rem;
+  color: white;
+}
+.email:hover {
+  color: white;
+  }
 }
 /** socails **/
 /** socails **/

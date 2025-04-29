@@ -176,19 +176,8 @@ h3 {
   margin: 5px;
   box-shadow: 2px 2px 10px lightslategrey;
   border: 7px solid #FFD367;
-} {
-  background-image: linear-gradient(to bottom right, #E98B98, #692932);
-  display: inline-block;
-  text-align: center;
-  min-width: 30%;
-  min-height: 200px;
-  border-radius: 10px;
-  flex: 0 0 250px;
-  padding: 5px;
-  margin: 5px;
-  box-shadow: 2px 2px 10px lightslategrey;
-  border: 7px solid #692932;
-}
+} 
+
 /* delete later its a test */
 .card_body {
   background-color: #00923f;
@@ -233,6 +222,11 @@ h3 {
 }
 .email {
   font-size: 5rem;
+  color: white;
+}
+.email:hover {
+  color: white;
+  }
 }
 /* carausol */
 .carousel-inner img {
