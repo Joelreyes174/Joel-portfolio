@@ -1,0 +1,384 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --gold-la: #ffbb00;
+  --green-la: #00923f;
+  --red-la: #d52c27;
+  --black: #2C3639;
+}
+
+@font-face {
+  font-family:'typewriter'; 
+  src: url('/fonts/typewriter.ttf') format('truetype');
+}
+
+
+body {
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--black) !important;
+  margin: 0;
+  padding: 10px;
+}
+
+hr {
+  width: 50%;
+  margin: 20px auto;
+  border: none;
+  height: 4px;
+  border-radius: 20px;
+}
+
+/**      Baseball Card      **/
+.box {
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 652px;
+  width:480px;
+  background-color: red;
+  rotate: 90deg;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -50px;
+  margin-bottom: -50px;
+}
+
+/*****     Card flipper thing    ****/
+/*****    TEST     ******/
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  rotate: -90deg;
+}
+.card {
+  color: inherit;
+  cursor: pointer;
+  width: calc(33% - 2rem);
+  min-width: 460px;
+  height: 620px;
+  perspective: 1000px;
+  margin: 1rem;
+  position: relative;
+  max-height: 1200px;
+  max-width: 1200px;
+}
+.front,
+.back {
+  display: flex;
+  border-radius: 6px;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: ease-in-out 600ms;
+}
+
+.front {
+  background-size: cover;
+  padding: 2rem;
+  font-size: 1.618rem;
+  font-weight: 600;
+  color: #fff;
+  overflow: hidden;
+  font-family: Poppins, sans-serif;
+}
+.front:before {
+  position: absolute;
+  display: block;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #1a9be6, #1a57e6);
+  opacity: .0;
+  z-index: -1;
+}
+.card:hover .front {
+  transform: rotateY(180deg);
+}
+.card:nth-child(even):hover .front {
+  transform: rotateY(-180deg);
+}
+.back {
+  transform: rotateY(-180deg);
+  padding: 0 2em;
+  background-size: cover;
+}
+.card:hover .back {
+  transform: rotateY(0deg);
+}
+/***   END TEST     
+.baseball-card {
+  display: flex;
+  align-items: center;
+  width: 180px;
+  height: 252px;
+  margin: 2em auto;
+  perspective: 1000px;
+  border-radius: 3px;
+}
+
+article {
+  width: 180px;
+  height: 252px;
+  transition: 1s;
+  transform-style: preserve-3d;
+  position: relative;
+  border-radius: 3px;
+}
+article.flipped {
+  transform: rotateY(180deg);
+}
+.card_front {
+  rotate: 360deg;
+}
+.front, 
+.back {
+  width: 30em;
+  height: 2em;
+  border-radius: 3px;
+  curser: pointer;
+  backface-visibility:hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 2px 6px 15px rgba(0,0,0,0.3);
+}
+.front {
+  background-color: red;
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+.back {
+  box-sizing: border-box;
+  background-color: blue;
+  transform: rotateY(180deg);
+  padding: 0px;
+}
+
+.fbox {
+  background-color: red;
+  border-radius: 3px;
+  width: 100%;
+  height: 100%;
+}
+.bbox {
+  background-color: blue;
+  border-radius: 3px;
+  width: 100%;
+  height: 100%;
+}
+**/
+/* nav bar */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+.logo a {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  margin-left: 12px;
+  text-transform: uppercase;
+}
+
+/** Header collapsable button attempt **/
+#header-nav {
+  background-color: var(--black) !important;
+  border-radius: 10px;
+  margin-bottom: auto;
+  
+  &::after {
+    content: '';
+    border-radius: 4px;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 10%;
+    background-color: #00DBDE;
+    background-image: linear-gradient(45deg, #00923F 0%, #FFBB00 50%, #D52C27 100%);
+    filter: blur(20px);
+  }
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { /* name */
+  font-family: 'typewriter', sans-serif;
+  color: whitesmoke;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-shadow: 5px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+
+#nav-list a {
+  color: whitesmoke;
+  text-align: center;
+}
+
+#nav-list a:hover {
+  background-color: var(--green-la);
+}
+
+#nav-list a span {
+  font-size: 1.8em;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid whitesmoke;
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/** footer **/
+.footer_text {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800px;
+  color: whitesmoke;
+}
+.email {
+  font-size: 5rem;
+  color:white;
+}
+.email:hover {
+  color: white;
+  }
+/** socails **/
+/** socails **/
+.socials {
+  position: relative;
+  z-index: 1;
+}
+.socials .soc {
+  height: 100px;
+  width: 100px;
+  margin: 50px;
+  background-size: cover;
+}
+.socials .insta{
+  height: 100px;
+  width: 100px;
+  margin: 50px;
+  background-size: cover;
+}
+.socials .twitter{
+  height: 100px;
+  width: 100px;
+  margin: 50px;
+  background-size: cover;
+}
+
+.skyline {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+}
+
+/* media queries */
+/* Large */
+@media (min-width: 1200px) {
+
+}
+
+/* Medium */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Small */
+@media (min-width:768px) and (max-width:991px) {
+
+}
+
+/* extra small */
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 20px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+}
+
+/* extra extra small */
+@media (max-width: 479px) {
+  .email {
+    font-size: 2.5rem;
+  }
+  .socials .soc {
+    height: 50px;
+    width: 50px;
+  }
+  .socials .insta {
+    height: 50px;
+    width:50px;
+  }
+  .navbar-brand h1 {
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  .content {
+    rotate: 0deg;
+  }
+  .card {
+  min-width: 260px;
+  height: 420px;
+}
+}

@@ -1,0 +1,92 @@
+/** socails **/
+.socials {
+  position: relative;
+  z-index: 1;
+}
+.socials .soc {
+  height: 100px;
+  width: 100px;
+  margin: 50px;
+  background-size: cover;
+}
+.socials .insta{
+  height: 100px;
+  width: 100px;
+  margin: 50px;
+  background-size: cover;
+}
+.socials .twitter{
+  height: 100px;
+  width: 100px;
+  margin: 50px;
+  background-size: cover;
+}
+
+.skyline {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  z-index: -2;
+  bottom: 0;
+  left: 0;
+}
+
+.footer_text {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800px;
+  color: whitesmoke;
+}
+.email {
+  font-size: 5rem;
+  color: white;
+}
+.email:hover {
+  color: white;
+  }
+}
+
+p {
+  text-align: center;
+}
+
+/* media queries */
+/* Large */
+@media (min-width: 1200px) {
+
+}
+
+/* Medium */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Small */
+@media (min-width:768px) and (max-width:991px) {
+
+}
+
+/* extra small */
+@media (max-width: 767px) {
+  .email {
+    font-size: 35px;
+  }
+}
+
+/* extra extra small */
+@media (max-width: 479px) {
+  p {
+    font-size: 14px;
+  }
+  .email {
+    font-size: 2.5rem;
+  }
+  .socials .soc {
+    height: 50px;
+    width: 50px;
+  }
+  .socials .insta {
+    height: 50px;
+    width:50px;
+  }
+}
