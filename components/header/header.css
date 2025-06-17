@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --gold-la: #ffbb00;
+  --green-la: #00923f;
+  --red-la: #d52c27;
+  --black: rgba(0,0,0,0.4);
+}
+
+/** Header collapsable button attempt **/
+#header-nav {
+  background-color: var(--black) !important;
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter:blur(4px);
+  border: 1px solid rgba(255,255,255,0.1);
+  z-index: 1;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { /* name */
+  font-family: 'typewriter', sans-serif;
+  color: whitesmoke;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-shadow: 5px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+
+#nav-list a {
+  color: whitesmoke;
+  text-align: center;
+}
+
+#nav-list a:hover {
+  background-color: var(--green-la);
+  border-radius: 10px;
+}
+
+#nav-list a span {
+  font-size: 1.8em;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid whitesmoke;
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+
+
+/* media queries */
+/* Large */
+@media (min-width: 1200px) {
+
+}
+
+/* Medium */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Small */
+@media (min-width:768px) and (max-width:991px) {
+
+}
+
+/* extra small */
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 20px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+}
+
+/* extra extra small */
+@media (max-width: 479px) {
+  .navbar-brand h1 {
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+}

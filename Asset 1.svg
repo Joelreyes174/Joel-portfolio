@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 180.72 117.83">
+  <defs>
+    <linearGradient id="linear-gradient" x1="78.62" y1="590.34" x2="168.04" y2="606.1" gradientTransform="translate(0 651.88) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset=".21" stop-color="#515d60"/>
+      <stop offset=".28" stop-color="#4b575a"/>
+      <stop offset=".61" stop-color="#343e41"/>
+      <stop offset=".82" stop-color="#2c3639"/>
+    </linearGradient>
+    <clipPath id="clippath">
+      <circle cx="127.86" cy="52.86" r="52.86" style="fill: none;"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-2" x1="72.41" y1="295.29" x2="182.43" y2="295.29" gradientTransform="translate(0 347.88) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#959a9c"/>
+      <stop offset=".03" stop-color="#8d9295"/>
+      <stop offset=".22" stop-color="#6a7174"/>
+      <stop offset=".41" stop-color="#4f575a"/>
+      <stop offset=".61" stop-color="#3b4447"/>
+      <stop offset=".8" stop-color="#2f393c"/>
+      <stop offset="1" stop-color="#2c3639"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="95.3" y1="617.35" x2="123.85" y2="617.35" gradientTransform="translate(-499.71 182.44) rotate(66.29) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset=".18" stop-color="#2c3639"/>
+      <stop offset=".39" stop-color="#343e41"/>
+      <stop offset=".72" stop-color="#4b575a"/>
+      <stop offset=".79" stop-color="#515d60"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g id="Layer_1-2" data-name="Layer 1-2">
+      <path d="M13.38,60.02l6.92-2.72,4.47,7.91s.25-.48.89-.89,1.93-.64,2.96-.07c.51.41.43.23.64.4-.15-.61-1.96-9.44-1.96-9.44l5.56-2.34,4.84,9.54,2.44,11.06-4.21,4.85h-.45l-5.45-9.97s-.54,1.19-1.19,1.44c-.02.31-.06.28-.06.28l-.85.27-.19-.2s-1.07.18-1.77-.2c.14.74,1.29,6.1,1.29,6.1l-5.37,4.92-.38-.02-5.76-8.87-2.38-12.04h.01Z" style="fill: #515d60;"/>
+      <path d="M48.24,86.3l6.92-2.72,4.47,7.91s.25-.48.89-.89,1.93-.64,2.96-.07c.51.41.43.23.64.4-.15-.61-1.96-9.44-1.96-9.44l5.56-2.34,4.84,9.54,2.44,11.06-4.21,4.85h-.45l-5.45-9.97s-.54,1.19-1.19,1.44c-.02.31-.06.28-.06.28l-.85.27-.19-.2s-1.07.18-1.77-.2c.14.74,1.29,6.1,1.29,6.1l-5.37,4.92-.38-.02-5.76-8.87-2.38-12.04h.01Z" style="fill: #515d60;"/>
+      <path d="M.01,96.89l6.92-2.72,4.47,7.91s.25-.48.89-.89,1.93-.64,2.96-.07c.51.41.43.23.64.4-.15-.61-1.96-9.44-1.96-9.44l5.56-2.34,4.84,9.54,2.44,11.06-4.21,4.85h-.45l-5.45-9.97s-.54,1.19-1.19,1.44c-.02.31-.06.28-.06.28l-.85.27-.19-.2s-1.07.18-1.77-.2c.14.74,1.29,6.1,1.29,6.1l-5.37,4.92-.38-.02-5.76-8.87-2.38-12.04h.01Z" style="fill: #515d60;"/>
+      <g>
+        <circle cx="127.86" cy="52.86" r="52.86" style="fill: url(#linear-gradient);"/>
+        <g style="clip-path: url(#clippath);">
+          <line x1="72.82" y1="63.93" x2="182.02" y2="41.25" style="fill: none; stroke: url(#linear-gradient-2); stroke-miterlimit: 10; stroke-width: 4px;"/>
+        </g>
+      </g>
+      <ellipse cx="109.59" cy="34.53" rx="16.84" ry="13.72" transform="translate(33.91 120.98) rotate(-66.29)" style="fill: url(#linear-gradient-3);"/>
+    </g>
+  </g>
+</svg>

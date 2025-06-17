@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
   gradient.style.zIndex = "-1";
   gradient.style.background = 'linear-gradient(45deg, rgba(0, 146, 63, 0.5), rgba(255, 187, 0, 0.5), rgba(213, 44, 39, 0.5))';
   gradient.style.filter = 'blur(20px)';
-  gradient.style.opacity = '0.8';
+  gradient.style.opacity = '0';
   
   shadow.appendChild(gradient);
 });
@@ -38,3 +38,37 @@ bbCard.addEventListener("click", function() {
 function toggleMenu() {
   document.querySelector(".nav-links").classList.toggle("active");
 }
+
+function loadComponent(id, file, cssFile = null) {
+  fetch(file)
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById(id).innerHTML = html;
+
+      if (cssFile) {
+        const link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.href = cssFile;
+        document.head.appendChild(link);
+      }
+    })
+    .catch(error => console.error(error));
+}
+
+loadComponent("header", "components/header/header.html", "components/header/header.css");
+loadComponent("background", "components/background/background.html", "components/background/background.css");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

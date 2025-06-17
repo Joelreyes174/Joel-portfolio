@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --gold-la: #ffbb00;
+  --green-la: #00923f;
+  --red-la: #d52c27;
+  --black: #2C3639;
+}
+
+
+/* something i dont remember */
+h1 {
+  text-align: center;
+  font-size: 100px;
+  color: white;
+  font-family: 'typewriter', sans-serif !important;
+}
+h3 {
+  text-align: center;
+}
+
+/* name card */
+.name_card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 900px;
+  background-color: var(--black);
+  margin: 10px auto;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  border: 5px solid #748184;
+
+  &::after {
+    content: '';
+    border-radius: 10px;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #00DBDE;
+    background-image: linear-gradient(45deg, #00923F 0%, #FFBB00 50%, #D52C27 100%);
+    filter: blur(20px);
+    opacity: 20%;
+  }
+}
+
+.photo {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card-content {
+  flex:1;
+  color: white;
+}
+
+.text {
+  justify-content: center;
+  font-size: 16px;
+  margin: 1px;
+  text-justify: inter-word;
+}
+
+/* media queries */
+/* Large */
+@media (min-width: 1200px) {
+  .photo {
+    width: 300px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .photo {
+    width: 240px;
+  }
+}
+
+/* Small */
+@media (min-width:768px) and (max-width:991px) {
+
+}
+
+/* extra small */
+@media (max-width: 767px) {
+  .name_card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .photo {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* extra extra small */
+@media (max-width: 479px) {
+  p {
+    font-size: 14px;
+  }
+  .photo {
+    width: 230px;
+  }
+  .name_card {
+    width: 350px;
+    height: fit-content;
+  }
+  .name_card img {
+    position: relative;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+  }
+}
