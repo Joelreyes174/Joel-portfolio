@@ -7,8 +7,8 @@
 		<title>Joel Reyes Portfolio</title>
      <link rel="icon" type="image/x-icon" href="/images/Asset 1.png">
     <link rel="stylesheet" href="components/background">
-		<link rel="stylesheet" href="css/page_css/style.css">
-		<link rel="stylesheet" href="css/bootstrap.min copy.css">
+	<link rel="stylesheet" href="css/page_css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.min copy.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
@@ -137,7 +137,29 @@
         <!-- Gallery -->
         <section>
             <hr>
-            <h1 style="color:white;">Graphic Design</h1>
+            <h1 style="color:white;">Freelance Graphic Designs</h1>
+            <div class="custom-carousel">
+              <div class="carousel-slide active">
+                <img src="images/HP_carousel/MV_insta_ad.png" alt="Coffee AD">
+                <div class="overlay">
+                  <h2>MV Coffee Roasters AD #1</h2>
+                  <p>This is an add that is on instagram promoting the buisness</p>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <img src="images/HP_carousel/GD_portfolio.png" alt="Graduation Card">
+                <div class="overlay">
+                  <h2>Graduation Card</h2>
+                  <p>This was done as a Freelance Job, name and photo are changed.</p>
+                </div>
+              </div>
+              <!-- Add more slides here -->
+
+              <button class="prev" onclick="moveSlide(-1)">❮</button>
+              <button class="next" onclick="moveSlide(1)">❯</button>
+            </div>
+
+            <!---
             <div class="GD_images"> 
                 <div data-toggle="modal" data-target="#myModal1">
                     <img src="images/Untitled 16~2.png" alt="UCLA Banner">
@@ -153,6 +175,7 @@
                     </div>
                 </div>
             </div>
+            --->
         </section>
     </body>
     <footer>
