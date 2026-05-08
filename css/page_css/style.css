@@ -11,11 +11,6 @@
   --black: #2C3639;
 }
 
-@font-face {
-  font-family: typewriter; 
-  src: url('/fonts/typewriter.ttf') format('truetype');
-}
-
 body {
   font-size: 16px;
   justify-content: center;
@@ -32,6 +27,59 @@ hr {
   border: none;
   height: 4px;
   border-radius: 20px;
+}
+
+.buttons_grid{
+  display: flex;
+  flex-wrap: wrap; /* allows wrapping on small screens */
+  gap: 40px; /* increased space between buttons */
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* keeps text near bottom */
+  height: 400px;
+  width: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 5px solid black;
+  border-radius: 10px;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.btn h1,
+.btn p {
+  position: relative;
+  z-index: 1; /* make sure text is above overlay */
+  margin: 0;
+}
+
+.btn h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.btn p {
+  font-size: 16px;
 }
 
 .custom-carousel {
