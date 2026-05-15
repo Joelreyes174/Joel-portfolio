@@ -42,7 +42,6 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: flex-end; /* keeps text near bottom */
-  height: 50px;
   width: 200px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -52,7 +51,6 @@ hr {
   padding: 15px;
   color: white;
   text-decoration: none;
-  font-family: sans-serif;
   position: relative;
   overflow: hidden;
 }
