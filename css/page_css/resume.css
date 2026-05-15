@@ -11,10 +11,12 @@
   padding: 0;
 }
 
+/*
 @font-face {
   font-family:'typewriter'; 
   src: url('/fonts/typewriter.ttf') format('truetype');
 }
+*/
 
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 

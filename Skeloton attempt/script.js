@@ -19,7 +19,8 @@ const cardData = [
   {
     title: "Card One",
     description: "This is the first card with a beautiful image.",
-    image: "https://via.placeholder.com/400x200"
+    image: "https://via.placeholder.com/400x200",
+    buttonText: "Learn more"
   },
   {
     title: "Card Two",

@@ -11,11 +11,12 @@
   --black: #2C3639;
 }
 
+/*
 @font-face {
   font-family:'typewriter'; 
   src: url('/fonts/typewriter.ttf') format('truetype');
 }
-
+*/
 body {
   font-size: 16px;
   justify-content: center;
@@ -123,7 +124,6 @@ hr {
 }
 
 .navbar-brand h1 { /* name */
-  font-family: 'typewriter', sans-serif;
   color: whitesmoke;
   font-size: 1.5em;
   text-transform: uppercase;

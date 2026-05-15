@@ -16,7 +16,19 @@
     <h1>UX/UI Freelance Projects</h1>
 
     <div class="container">
-      <div id="card-container"></div>
+      <div id="card-container">
+        <div className="card-container">
+          {cardData.map((card, index) => (
+            <div className="card" key={index}>
+              <img src={card.image} alt={card.title} />
+              <h2>{card.title}</h2>
+              <p>{card.description}</p>
+
+              <button>{card.buttonText}</button>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
     
     <h1>UX/UI School Projects</h1>
