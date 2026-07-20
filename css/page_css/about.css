@@ -19,7 +19,6 @@
 */
 
 body {
-  font-size: 16px;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -32,8 +31,86 @@ hr {
   width: 50%;
   margin: 20px auto;
   border: none;
-  height: 4px;
-  border-radius: 20px;
+  height: 2px;
+  border-radius: 5px;
+}
+
+
+.about{
+  max-width: 1000px;
+  margin: auto;
+  padding: 80px 40px;
+  color: whitesmoke;
+  background-color: var(--black);
+  border-radius: 35px;
+}
+
+.text {
+  display:grid;
+  grid-template-columns: 1fr 1px 1fr;
+  align-items: start;
+}
+
+.secOne {
+  display: flex;
+  felx-direction: column;
+  gap: auto;
+}
+
+
+.bio h2 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  color: whitesmoke;
+}
+
+.boi p {
+  color: white;
+  font-size: 2rem;
+}
+
+.photo {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.divider {
+  width: 1px;
+  background: #d9d9d9;
+  height: 100%;
+}
+
+.secTwo {
+  padding: 50px;
+}
+.secTwo h3 {
+  font-size: 2.5rem;
+  magin-bottom: 25px;
+}
+.secTwo ul {
+  list-style: none;
+  padding:0;
+}
+.secTwo li {
+  magin-bottom: 18px;
+  font-size: 2rem;
+}
+
+.about hr{
+  margin: 70px 0;
+  border: none;
+  border-top: 1px;
+}
+
+.bio{
+  max-width: 900px;
+}
+
+.bio p {
+  line-height: 1.8;
+  color: whitesmoke;
+  font-size: 1.1rem;
 }
 
 /**      Baseball Card      **/
