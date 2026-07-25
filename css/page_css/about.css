@@ -70,7 +70,7 @@ hr {
 }
 
 .photo {
-  width: 300px;
+  width: 400px;
   height: auto;
   border-radius: 10px;
 }
@@ -96,6 +96,17 @@ hr {
   magin-bottom: 18px;
   font-size: 2rem;
 }
+
+dt {
+  font-size: 2rem;
+}
+dd {
+  font-size: 1.5rem;
+  font-weight: 5;
+  font-style: italic;
+}
+
+
 
 .about hr{
   margin: 70px 0;
@@ -323,7 +334,29 @@ article.flipped {
 
 /* Small */
 @media (min-width:768px) and (max-width:991px) {
+      .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
 
+    .secOne {
+        order: 1;
+        width: 100%;
+        text-align: center;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .secTwo {
+        order: 2;
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
 }
 
 /* extra small */
@@ -356,6 +389,45 @@ article.flipped {
 
 /* extra extra small */
 @media (max-width: 479px) {
+      .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .secOne {
+        order: 1;
+        width: 100%;
+        text-align: center;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .secTwo {
+        order: 2;
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    .break {
+      display: none;
+    }
+
+
+    .secOne {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .photo{
+      margin: 2rem;
+    }
+
+
   .email {
     font-size: 2.5rem;
   }
